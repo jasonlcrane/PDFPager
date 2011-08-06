@@ -1,0 +1,24 @@
+.pdf-nav {
+	margin-bottom: 5px;
+	text-align: center;
+}
+.pdf-prev {
+	margin-right: 10px;
+}
+.pdf-next {
+	margin-left: 10px;
+}
+.page-input {
+	text-align: center;
+	width: 35px;
+}
+.pdf-pager {
+	height: 650px;
+	width: 420px;
+}
+/* DEMO ONLY */
+#callback-notes {
+	position: absolute;
+	left: 475px;
+	top: 800px;
+}
