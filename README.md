@@ -1,18 +1,22 @@
-# README for a newly created project.
+# README for PDF Pager
 
-There are a couple of things you should do first, before you can use all of Git's power:
+PDF Pager is a jQuery plugin that allows you to page through multiple PDFs in the 
+<a href="https://docs.google.com/viewer">Google Docs Viewer</a>. While the Google Docs Viewer
+natively allows paging through multi-page PDFs, it does not let you hook into a page change event to do other 
+stuff each time a new page displays.
 
-  * Add a remote to this project: in the Cloud9 IDE command line, you can execute the following commands
-    `git remote add [remote name] [remote url (eg. 'git@github.com:/ajaxorg/node_chat')]` [Enter]
-  * Create new files inside your project
-  * Add them to to Git by executing the following command
-    `git add [file1, file2, file3, ...]` [Enter]
-  * Create a commit which can be pushed to the remote you just added
-    `git commit -m 'added new files'` [Enter]
-  * Push the commit the remote
-    `git push [remote name] master` [Enter]
+# Usage
+<pre>
+$('#my-pdf-pager').pdfPager({
+     pages: 3,
+     pdfFolder: 'http://www.jasonlcrane.com/demo/pdfpager/pdfs'
+});
+</pre>
 
-That's it! If this doesn't work for you, please visit the excellent resources from [Github.com](http://help.github.com) and the [Pro Git](http://http://progit.org/book/) book.
-If you can't find your answers there, feel free to ask us via Twitter (@cloud9ide), [mailing list](groups.google.com/group/cloud9-ide) or IRC (#cloud9ide on freenode).
+# Requirements
+  * The plugin has two required settings: pages (the number of PDFs) and pdfFolder (an absolute path to the PDFs
+  on your server).
+  * The plugin depends on the PDFs being named sequentially as 1.pdf, 2.pdf, 3.pdf, etc.
 
-Happy coding!
+# Documentation
+The plugin has several other options. Check them out in the full documentation at http://www.jasonlcrane.com/2011/07/jquery-plugin-page-through-multiple-pdfs/.
