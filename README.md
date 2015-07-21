@@ -17,6 +17,3 @@ $('#my-pdf-pager').pdfPager({
   * The plugin has two required settings: pages (the number of PDFs) and pdfFolder (an absolute path to the PDFs
   on your server).
   * The plugin depends on the PDFs being named sequentially as 1.pdf, 2.pdf, 3.pdf, etc.
-
-# Documentation
-The plugin has several other options. Check them out in the full documentation at http://www.jasonlcrane.com/2011/07/jquery-plugin-page-through-multiple-pdfs/.
